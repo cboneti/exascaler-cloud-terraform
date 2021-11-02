@@ -184,7 +184,7 @@ locals {
     data.google_compute_image.exa.labels,
     {
       deployment = local.prefix
-    }
+    }, var.labels
   )
 
   roles = {

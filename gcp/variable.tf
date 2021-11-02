@@ -10,6 +10,12 @@ variable "zone" {
   type = string
 }
 
+variable "labels" {
+  description = "Labels to add to resources. List of key key, value pairs."
+  type        = any
+  default     = {}
+}
+
 variable "service_account" {
   type = object({
     new  = bool
